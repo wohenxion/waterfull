@@ -85,7 +85,7 @@ window.onscroll = function () {
 
     var sTimer = setTimeout(function () {
         isApend();
-    })
+    }，100)
 
 }
 //判断是否加载
