@@ -93,7 +93,7 @@ function isApend() {
     var allPic = document.querySelectorAll('.picBox');//获取所有的单元
     var lastH = allPic[allPic.length - 1].offsetTop; //获取最后的单元的top值
     var winH = document.documentElement.clientHeight || document.body.clientHeight  //获取文档body的高度
-    var scrollT = document.body.scrollTop;//获取文档滚动的距离
+    var scrollT = document.documentElement.top || document.body.scrollTop;//获取文档滚动的距离
     if (lastH < (scrollT + winH - Math.floor(allPic[allPic.length - 1].clientHeight / 2))) {
         append();//加载
     }
