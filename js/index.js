@@ -74,7 +74,7 @@ window.onresize = function () {
     }
     var t = setTimeout(function () {
         waterfull('main', 'picBox', 15);
-        clearTimeout(t)
+       
     }, 200)
 
 }
