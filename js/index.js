@@ -35,8 +35,7 @@ function waterfull(parentID, classNa, paddingR) {
     //获取所有的img
     var oElement = document.querySelectorAll('.' + classNa);
     //获取一行多少列
-   // var col = Math.floor(document.documentElement.clientWidth / oElement[0].clientWidth);
-    var col = Math.floor(document.documentElement.clientWidth / oElement[0].clientWidth) >= 4?Math.floor(document.documentElement.clientWidth / oElement[0].clientWidth):4;
+    var col = Math.floor(document.documentElement.clientWidth / oElement[0].clientWidth) >= 4 ? Math.floor(document.documentElement.clientWidth / oElement[0].clientWidth) : 4;
 
     //获取列的宽
     var cloW = oElement[0].clientWidth;
